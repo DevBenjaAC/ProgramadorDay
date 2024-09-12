@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Día del Programador!</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container text-center d-flex flex-column justify-content-center align-items-center vh-100">
+        <h1 class="display-4 text-info mb-4">¡Feliz Día del Programador!</h1>
+        <p class="lead mb-4">¿Te gustaría recibir más trabajo hoy?</p>
+        <!-- Botones -->
+        <div class="d-flex justify-content-center align-items-center">
+            <button id="yes-btn" class="btn btn-success btn-lg mr-3">¡Sí, por favor!</button>
+            <button id="no-btn" class="btn btn-danger btn-lg">No, gracias</button>
+        </div>
+
+        <p id="message" class="mt-4 text-warning display-4"></p>
+
+        <!-- Memes que aparecerán aleatoriamente -->
+        <div id="memes-container"></div>
+        <!-- Video de YouTube en el centro -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4 video">
+            <video class="embed-responsive-item" src="./media/DIA DEL PROGRAMADOR BTOB.mp4" autoplay muted loop
+                playsinline></video>
+        </div>
+
+
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS personalizado -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

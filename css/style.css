@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #000000, #111111, #000000, #111111);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Animación de gradiente de fondo más oscuro */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+#message {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#no-btn {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#memes-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Estilos para los memes */
+.meme {
+    position: absolute;
+    width: 350px;
+    animation: fadeOut 2s ease-in-out forwards;
+    border-radius: 10px;
+}
+
+.video {
+    z-index: -1;
+    width: 800px;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* Botones moviéndose */
+.move-right {
+    transform: translateX(500px);
+}
+
+.move-left {
+    transform: translateX(-320px);
+}
+
+.move-up {
+    transform: translateY(-180px);
+}
+
+.move-down {
+    transform: translateY(270px);
+}
